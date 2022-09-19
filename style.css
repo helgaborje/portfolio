@@ -18,3 +18,8 @@ ul {
 li {
     display: inline;
 }
+
+/* responsive styles */
+@media screen {
+    
+}
