@@ -1,32 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-h1 {
+.logotyp {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     position: absolute;
-    top: 30%;
-    left: 60px;
+    top: 10%;
+    left: 10%;
 }
 
-h1 span {
+h2 span {
     font-size: 2.1em;
     font-weight: 700;
 }
 
-h2 {
+h3 {
     font-family: 'Noto Sans', sans-serif;
+}
 
+.fa-burger-cheese {
+    content: f7f1;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 50px;
+    z-index: 999;
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+/* nav {
+    display: flex;
 }
 
 .main-nav {
     text-align: right;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .main.nav:hover {
     font-weight: bold;
-}
+} */
 
 header .container img {
     max-width: 100%;
@@ -43,10 +91,29 @@ li {
     display: inline;
 }
 
+.container img {
+    /* position: relative;
+    z-index: 0; */
+}
+
+.work {
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+
+
 
 /* responsive styles */
 @media screen and (min-width: 400px) {
-    h1 {
+    h2 {
         font-size: 20px;
     }
 }
