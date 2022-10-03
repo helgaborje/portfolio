@@ -20,7 +20,8 @@ h2 {
     font-weight: 300;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 5%;
+    font-size: 20px;
 }
 
 h2 span {
@@ -32,8 +33,7 @@ h3 {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.fa-burger-cheese {
-    content: f7f1;
+.fa-burger {
     color: white;
 }
 
