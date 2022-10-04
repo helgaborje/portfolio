@@ -57,6 +57,7 @@ nav ul {
 }
 
 footer {
+    text-align: center;
     background-color: black;
     color: white;
     padding: 15px;
@@ -97,7 +98,12 @@ li {
 }
 
 .work {
-    text-align: center;
+    /* text-align: center; */
+}
+
+.work img {
+    width: 350px;
+    height: auto;
 }
 
 .about {
@@ -106,6 +112,15 @@ li {
 
 .skills {
     text-align: center;
+    background-color: #08A8B7;
+    color: white;
+    padding: 15px;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 2em;
+    margin: 10px;
 }
 
 
