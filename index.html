@@ -5,9 +5,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@300;700&family=Raleway:wght@300;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@300;700&family=Raleway:wght@300;700&display=swap"
     rel="stylesheet">
-  
+
   <script src="https://kit.fontawesome.com/6ff8ae7524.js" crossorigin="anonymous"></script>
 
   <title>Helga Börjesson | Portfolio</title>
@@ -18,83 +19,75 @@
 </head>
 
 <body>
-  <header>
-    <!-- Navigation bar -->
-    <nav>
-      <h1 class="logotyp">helga</h1>
-      <div class="main-nav">
-        <i class="fa-solid fa-burger"></i>
-        <!-- <button id="menu-button"><i class="fa-regular fa-burger-cheese"></i></button> -->
 
-      <ul>
+
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <h1 class="logotyp"></h1>
+    <div class="main-nav">
+      <ul class="menu">
+        <li class="item"><a href="#">WORK</a></li>
+        <li class="item"><a href="#">ABOUT</a></li>
+        <li class="item"><a href="#">CONTACT</a></li>
+      </ul>
+      <!-- Dropdown menu -->
+      <i class="fa-solid fa-burger fa-xl"></i>
+      <ul class="dropdown">
         <li>WORK</li>
         <li>ABOUT</li>
         <li>CONTACT</li>
       </ul>
     </div>
-    </nav>
-
+  </nav>
+  <main class="grid-container">
     <!-- Header -->
-    <div class="container">
-      <img src="images/header.jpg" alt="headerimage">
+    <header class="header-container">
+      <img src="../mi-portfolio/images/header.jpg" alt="">
       <div class="headertext">
-      <h2>Hello
-      <br>
-      <span>I am Helga</span>
-      <br>
-      Front End Developer
-      </h2>
-    </div>
-    </div>
-  </header>
+        <h2>Hello
+          <br>
+          <span>I am Helga</span>
+          <br>
+          Front End Developer
+        </h2>
+      </div>
+    </header>
 
-  <main>
     <!-- Work -->
     <section class="work">
       <!-- <h3>WORK</h3> -->
-        <!-- <img src="images/barbershop.png" alt="barbershop"> -->
+      <div class="gallery">
+        <img src="../mi-portfolio/images/barbershop.png" alt="">
+        <img src="../mi-portfolio/images/anas_mckup.png" alt="">
+      </div>
     </section>
-
     <!-- About -->
     <section class="about">
       <h3>ABOUT</h3>
-        <p>text about me...</p>
+      <p>text about me...</p>
     </section>
-
     <!-- Skills -->
     <section class="skills">
       <h3>SKILLS</h3>
       <i class="fa-brands fa-html5"></i>
       <i class="fa-brands fa-css3-alt"></i>
       <i class="fa-brands fa-figma"></i>
-
-      <!-- <img src="Images/html.png" alt="HTML" width="60" height="60">
-      <img src="Images/css-3.png" alt="CSS" width="60" height="60">
-      <img src="Images/Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" width="60" height="60">
-      <img src="Images/figma.png" alt="Figma" width="60" height="60"> -->
-      <br>
-      <!-- <img src="Images/illustrator.png" alt="Illustrator" width="60" height="60">
-      <img src="Images/photoshop.png" alt="Photoshop" width="60" height="60">
-      <img src="Images/xd.png" alt="XD" width="60" height="60">
-      <img src="Images/indesign.png" alt="InDesign" width="60" height="60">
-      <img src="Images/after-effects.png" alt="After Effects" width="60" height="60">
-      <img src="Images/premiere-pro.png" alt="Premiere Pro" width="60" height="60"> -->
     </section>
-    
-  </main>
-
-  <!-- Contact -->
-  <footer>
-    <div class="contact">
+    <!-- Contact -->
+    <footer class=" contact">
       <h3>CONTACT</h3>
       <ul>
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="mailto:helgaborjesson@gmail.com"> E-post</a></li>
+        <li><a href="https://www.linkedin.com/in/helga-b%C3%B6rjesson-8342a8128/">
+            <i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/helgaborje">
+            <i class="fa-brands fa-github"></i></a></li>
+        <li><a href="mailto:helgaborjesson@gmail.com">
+            <i class="fa-solid fa-envelope fa-2x"></i></a></li>
       </ul>
-    </div>
-  </footer>
-
+    </footer>
+  </main>
+  </div>
 
 </body>
 
