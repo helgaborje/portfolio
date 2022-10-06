@@ -23,23 +23,41 @@
 
 
   <!-- Navigation bar -->
-  <nav class="navbar">
+
+
+  <div class="topnav" id="myTopnav">
+    <!-- <a href="#home">Home</a> -->
+    <a href="#news">WORK</a>
+    <a href="#contact">ABOUT</a>
+    <a href="#about">CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa-solid fa-burger"></i>
+    </a>
+  </div>
+
+
+
+
+
+  <!-- <nav class="navbar">
     <h1 class="logotyp"></h1>
     <div class="main-nav">
       <ul class="menu">
         <li class="item"><a href="#">WORK</a></li>
         <li class="item"><a href="#">ABOUT</a></li>
         <li class="item"><a href="#">CONTACT</a></li>
-      </ul>
-      <!-- Dropdown menu -->
-      <i class="fa-solid fa-burger fa-xl"></i>
+      </ul> -->
+  <!-- Dropdown menu -->
+  <!-- <i class="fa-solid fa-burger fa-xl"></i>
       <ul class="dropdown">
         <li>WORK</li>
         <li>ABOUT</li>
         <li>CONTACT</li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
+
+
   <main class="grid-container">
     <!-- Header -->
     <header class="header-container">
@@ -58,14 +76,36 @@
     <section class="work">
       <!-- <h3>WORK</h3> -->
       <div class="gallery">
-        <img src="../mi-portfolio/images/barbershop.png" alt="">
-        <img src="../mi-portfolio/images/anas_mckup.png" alt="">
+        <div class="hover-container">
+          <img src="../mi-portfolio/images/barbershop-700x500.png" alt="barbershop" class="image">
+          <div class="hover-img">
+            <div class="hover-text">Barbershop <br>-<br>School project <br>-<br> HTML & CSS</div>
+            <a href="https://melodious-paletas-005bc8.netlify.app/"><button class="site">Website</button></a>
+            <a href="https://github.com/helgaborje/barbershop.github.io"><button class="repo">GitHub</button></a>
+          </div>
+        </div>
+        <div class="hover-container">
+          <img src="../mi-portfolio/images/ammarnas-700x500.png" alt="ammarnas" class="image">
+          <div class="hover-img">
+            <div class="hover-text">Ammarnäs <br>-<br>School project <br>-<br> Webdesign</div>
+            <button class="site"> Website</button>
+            <button class="repo">GitHub</button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- About -->
+    <h3>ABOUT</h3>
+
     <section class="about">
-      <h3>ABOUT</h3>
-      <p>text about me...</p>
+      <img src="../mi-portfolio/images/profilbild.png" alt="helga" class="about-img">
+      <div class="about-text">
+        <p>Front End developer student based in Malmö, Sweden.
+          A background in graphic design, both print and digital.
+          A problem solver and a team player.
+          With roots in Swedish Lapland makes me a calm, not very stressful person and a really good snow mobile driver.
+        </p>
+      </div>
     </section>
     <!-- Skills -->
     <section class="skills">
@@ -73,6 +113,12 @@
       <i class="fa-brands fa-html5"></i>
       <i class="fa-brands fa-css3-alt"></i>
       <i class="fa-brands fa-figma"></i>
+      <br>
+      <img src="../mi-portfolio/icons/after-effects.png" alt="">
+      <img src="../mi-portfolio/icons/illustrator.png" alt="">
+      <img src="../mi-portfolio/icons/indesign.png" alt="">
+      <img src="../mi-portfolio/icons/photoshop.png" alt="">
+      <img src="../mi-portfolio/icons/premiere-pro.png" alt="">
     </section>
     <!-- Contact -->
     <footer class=" contact">
@@ -88,6 +134,19 @@
     </footer>
   </main>
   </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
 
 </body>
 
