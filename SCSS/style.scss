@@ -216,7 +216,6 @@ li {
 @media (min-width: 600px) {
     .gallery {
         display: flex;
-    
         flex-wrap: nowrap;
        
     }
@@ -235,7 +234,17 @@ li {
 
     .headertext h2 {
         font-size: 2em;
+    }
+}
 
+@media (min-width: 900px) {
+    .gallery {
+        max-width: 900px;
+    }
+
+    .work {
+        display: flex;
+        justify-content: center;
     }
 }
 
