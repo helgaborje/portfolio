@@ -2,7 +2,7 @@
 <html class="no-js" lang="sv">
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,133 +15,117 @@
 
   <meta charset="utf-8">
   <meta name="description" content="">
+  <meta property="og:url" content="www.adress.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
-
-
   <!-- Navigation bar -->
-
-
-  <div class="topnav" id="myTopnav">
-    <!-- <a href="#home">Home</a> -->
-    <a href="#news">WORK</a>
-    <a href="#contact">ABOUT</a>
-    <a href="#about">CONTACT</a>
+  <nav class="nav" id="myTopnav">
+    <a href="#work">WORK</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa-solid fa-burger"></i>
     </a>
-  </div>
+  </nav>
 
-
-
-
-
-  <!-- <nav class="navbar">
-    <h1 class="logotyp"></h1>
-    <div class="main-nav">
-      <ul class="menu">
-        <li class="item"><a href="#">WORK</a></li>
-        <li class="item"><a href="#">ABOUT</a></li>
-        <li class="item"><a href="#">CONTACT</a></li>
-      </ul> -->
-  <!-- Dropdown menu -->
-  <!-- <i class="fa-solid fa-burger fa-xl"></i>
-      <ul class="dropdown">
-        <li>WORK</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
-      </ul>
+  <!-- <main class="grid-container"> -->
+  <!-- Header -->
+  <header class="header-container">
+    <img src="../mi-portfolio/images/header.jpg" alt="">
+    <div class="headertext">
+      <h2>Hello
+        <br>
+        <span>I am Helga</span>
+        <br>
+        Front End Developer
+      </h2>
     </div>
-  </nav> -->
+  </header>
 
-
-  <main class="grid-container">
-    <!-- Header -->
-    <header class="header-container">
-      <img src="../mi-portfolio/images/header.jpg" alt="">
-      <div class="headertext">
-        <h2>Hello
-          <br>
-          <span>I am Helga</span>
-          <br>
-          Front End Developer
-        </h2>
-      </div>
-    </header>
-
-    <!-- Work -->
-    <section class="work">
-      <!-- <h3>WORK</h3> -->
-      <div class="gallery">
-        <div class="hover-container">
-          <img src="../mi-portfolio/images/barbershop-700x500.png" alt="barbershop" class="image">
-          <div class="hover-img">
-            <div class="hover-text">Barbershop <br>-<br>School project <br>-<br> HTML & CSS</div>
-            <a href="https://melodious-paletas-005bc8.netlify.app/"><button class="site">Website</button></a>
-            <a href="https://github.com/helgaborje/barbershop.github.io"><button class="repo">GitHub</button></a>
+  <!-- Work -->
+  <section class="work" id="work">
+    <div class="gallery">
+      <div class="hover-container">
+        <img src="../mi-portfolio/images/barbershop-700x500.png" alt="barbershop" class="image">
+        <div class="hover-img">
+          <div class="hover-text">
+            <h3>HTML & CSS</h3>
+            <p>Individual school assignment on the education Front End Developer</p>
           </div>
-        </div>
-        <div class="hover-container">
-          <img src="../mi-portfolio/images/ammarnas-700x500.png" alt="ammarnas" class="image">
-          <div class="hover-img">
-            <div class="hover-text">Ammarnäs <br>-<br>School project <br>-<br> Webdesign</div>
-            <button class="site"> Website</button>
-            <button class="repo">GitHub</button>
-          </div>
+          <a href="https://melodious-paletas-005bc8.netlify.app/">
+            <button class="site">Visit site</button></a>
+          <a href="https://github.com/helgaborje/barbershop.github.io">
+            <button class="repo">Visit GitHub</button></a>
         </div>
       </div>
-    </section>
-    <!-- About -->
+      <div class="hover-container">
+        <img src="../mi-portfolio/images/ammarnas-700x500.png" alt="ammarnas" class="image">
+        <div class="hover-img">
+          <div class="hover-text">
+            <h3>Webdesign</h3>
+            <p>Individual school assignment on the education Digital Content Designer</p>
+          </div>
+          <button class="project"> Visit project</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <div class="about-container">
     <h3>ABOUT</h3>
+  </div>
+  <section class="about" id="about">
+    <img src="../mi-portfolio/images/profilbild.png" alt="helga" class="about-img">
+    <div class="about-text">
+      <p>Front End developer student based in Malmö, Sweden.
+        A background in graphic design, both print and digital.
+        A problem solver and a team player.
+        With roots in Swedish Lapland makes me a calm, not very stressful person and a really good snow mobile driver.
+      </p>
+    </div>
+  </section>
 
-    <section class="about">
-      <img src="../mi-portfolio/images/profilbild.png" alt="helga" class="about-img">
-      <div class="about-text">
-        <p>Front End developer student based in Malmö, Sweden.
-          A background in graphic design, both print and digital.
-          A problem solver and a team player.
-          With roots in Swedish Lapland makes me a calm, not very stressful person and a really good snow mobile driver.
-        </p>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section class="skills">
-      <h3>SKILLS</h3>
-      <i class="fa-brands fa-html5"></i>
-      <i class="fa-brands fa-css3-alt"></i>
-      <i class="fa-brands fa-figma"></i>
-      <br>
-      <img src="../mi-portfolio/icons/after-effects.png" alt="">
-      <img src="../mi-portfolio/icons/illustrator.png" alt="">
-      <img src="../mi-portfolio/icons/indesign.png" alt="">
-      <img src="../mi-portfolio/icons/photoshop.png" alt="">
-      <img src="../mi-portfolio/icons/premiere-pro.png" alt="">
-    </section>
-    <!-- Contact -->
-    <footer class=" contact">
-      <h3>CONTACT</h3>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/helga-b%C3%B6rjesson-8342a8128/">
-            <i class="fa-brands fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/helgaborje">
-            <i class="fa-brands fa-github"></i></a></li>
-        <li><a href="mailto:helgaborjesson@gmail.com">
-            <i class="fa-solid fa-envelope fa-2x"></i></a></li>
-      </ul>
-    </footer>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h3>SKILLS</h3>
+    <i class="fa-brands fa-html5"></i>
+    <i class="fa-brands fa-css3-alt"></i>
+    <i class="fa-brands fa-figma"></i>
+    <br>
+    <img src="../mi-portfolio/icons/after-effects.png" alt="">
+    <img src="../mi-portfolio/icons/illustrator.png" alt="">
+    <img src="../mi-portfolio/icons/indesign.png" alt="">
+    <img src="../mi-portfolio/icons/photoshop.png" alt="">
+    <img src="../mi-portfolio/icons/premiere-pro.png" alt="">
+  </section>
+
+  <!-- Contact -->
+  <footer class=" contact" id="contact">
+    <h3>CONTACT</h3>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/helga-b%C3%B6rjesson-8342a8128/">
+          <i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/helgaborje">
+          <i class="fa-brands fa-github"></i></a></li>
+      <li><a href="mailto:helgaborjesson@gmail.com">
+          <i class="fa-solid fa-envelope fa-2x"></i></a></li>
+    </ul>
+  </footer>
   </main>
   </div>
 
+  <!-- Script -->
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
+      if (x.className === "nav") {
         x.className += " responsive";
       } else {
-        x.className = "topnav";
+        x.className = "nav";
       }
     }
   </script>
