@@ -18,28 +18,11 @@ a {
     color: white;
 }
 
- .gallery a {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    border-color: transparent;
-    background-color: #b25657;
-    color: white;
-    padding: 10px 50px 10px 50px;
-    margin: 10px 30px;
-    font-size: smaller;
-    font-family: $font;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
-}
-
 /* Header */
 .header-container img {
     width: 100%;
     height: auto;
     z-index: 0;
-    opacity: 0.2;
 }
 
 .header-container {
@@ -48,18 +31,22 @@ a {
 
 .headertext {
     position: absolute;
-    top: 5vh;
+    top: 2.5vh;
     left: 5%;
+    background-color: white;
+    padding: 20px;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+
 }
 
-h2 {
+h1 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 20px;
 }
 
-h2 span {
+h1 span {
     font-size: 2.1em;
     font-weight: 700;
 }
@@ -90,13 +77,10 @@ img {
     width: 100%;
 }
 
-#gallery-image-padding-1 {
+#gallery-image-padding-1, #gallery-image-padding-2 {
     padding-top: 5px;
 }
 
-#gallery-image-padding-2 {
-    padding-top: 5px;
-}
 
 .image {
     opacity: 1;
@@ -133,9 +117,26 @@ img {
     width: 250px;
 }
 
-/*About */
+ /* Button */
+ .gallery a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border-color: transparent;
+    background-color: $button-color;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    margin: 10px 20px;
+    font-size: smaller;
+    font-family: $font;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+/* About */
 .about {
-    background-color: #F3EED2;
+    background-color: #EDDEA4;
     padding: 15px;
     text-align: center;
 }
@@ -154,7 +155,7 @@ img {
 }
 
 .about-container {
-    background-color: #F3EED2;
+    background-color: #EDDEA4;
     padding-top: 20px;
 }
 
@@ -162,7 +163,7 @@ img {
 .skills {
     text-align: center;
     padding: 15px;
-    background-color: #F3EED2;
+    background-color: #EDDEA4;
     padding-bottom: 30px;
 }
 
@@ -189,7 +190,7 @@ footer {
 footer .fa-brands {
     margin-right: 20px;
     margin-top: 20px;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 
@@ -212,7 +213,7 @@ li {
 .nav {
     overflow: hidden;
     justify-content: space-between;
-    background: rgba(116, 75, 75, 0.6);
+    background: #CC8F91;
     z-index: 999;
     margin: 0 auto;
     width: 100%;
@@ -227,10 +228,12 @@ li {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: 400;
+
 }
 
 .nav a:hover {
-    background-color: #885959;
+    background-color: #b25657;
     color: white;
     font-weight: 700;
 }
@@ -244,7 +247,7 @@ li {
 }
 
 /* Navbar mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
 
     .nav a {
         display: none;
@@ -254,9 +257,6 @@ li {
         float: right;
         display: block;
     }
-}
-
-@media screen and (max-width: 600px) {
     .nav.responsive .icon {
         position: absolute;
         right: 0;
@@ -267,16 +267,19 @@ li {
         float: none;
         display: block;
         text-align: center;
+        font-weight: 400;
     }
 }
 
-/* Desktop */
+/* Responsive layout */
 @media screen and (min-width: 480px) {
     .headertext {
         top: 7vh;
+        background-color: white;
+        padding: 20px;
     }
 
-    .headertext h2 {
+    .headertext h1 {
         font-size: 1.5em;
     }
 }
@@ -286,7 +289,9 @@ li {
         display: flex;
         flex-wrap: nowrap;  
     }
+}
 
+@media screen and (min-width: 700px) {
     .about {
         display: flex;
         text-align: left;
@@ -300,10 +305,12 @@ li {
     }
 
     .headertext {
-        top: 15vh;
+        top: 12vh;
+        background-color: white;
+        padding: 20px;
     }
 
-    .headertext h2 {
+    .headertext h1 {
         font-size: 2em;
     }
 }
