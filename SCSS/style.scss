@@ -75,11 +75,12 @@ img {
 .hover-container {
     position: relative;
     width: 100%;
+    margin: 5px;
 }
 
-#gallery-image-padding-1, #gallery-image-padding-2 {
+/* #gallery-image-padding-1, #gallery-image-padding-2, #gallery-image-padding-3 {
     padding-top: 5px;
-}
+} */
 
 
 .image {
@@ -136,7 +137,7 @@ img {
 
 /* About */
 .about {
-    background-color: #EDDEA4;
+    background-color: #F6BD60;
     padding: 15px;
     text-align: center;
 }
@@ -155,7 +156,7 @@ img {
 }
 
 .about-container {
-    background-color: #EDDEA4;
+    background-color: #F6BD60;
     padding-top: 20px;
 }
 
@@ -163,7 +164,7 @@ img {
 .skills {
     text-align: center;
     padding: 15px;
-    background-color: #EDDEA4;
+    background-color: #F6BD60;
     padding-bottom: 30px;
 }
 
@@ -213,7 +214,7 @@ li {
 .nav {
     overflow: hidden;
     justify-content: space-between;
-    background: #CC8F91;
+    background: #F28482;
     z-index: 999;
     margin: 0 auto;
     width: 100%;
@@ -233,7 +234,7 @@ li {
 }
 
 .nav a:hover {
-    background-color: #b25657;
+    background-color: #F5CAC3;
     color: white;
     font-weight: 700;
 }
@@ -285,12 +286,16 @@ li {
 }
 
 @media screen and (min-width: 600px) {
-    .gallery {
+    .gallery-1, .gallery-2, .gallery-3 {
         display: flex;
         flex-wrap: nowrap;  
     }
-}
 
+    .work {
+        display: flex;
+    }
+}
+ 
 @media screen and (min-width: 700px) {
     .about {
         display: flex;
@@ -324,4 +329,4 @@ li {
         display: flex;
         justify-content: center;
     }
-}
+} 
