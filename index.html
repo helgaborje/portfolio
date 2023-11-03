@@ -27,7 +27,7 @@
     <a href="#work">WORK</a>
     <a href="#about">ABOUT</a>
     <a href="#contact">CONTACT</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="navbar()">
       <i class="fa-solid fa-burger fa-xl"></i>
     </a>
   </nav>
@@ -58,8 +58,7 @@
                 <h3>Typescript, React</h3>
                 <p>Individual school assignment on the education Frontend Developer</p>
               </div>
-              <a href="https://swapi-hb.netlify.app/" title="Link to Swapi" target="_blank"
-                class="button">Visit
+              <a href="https://swapi-hb.netlify.app/" title="Link to Swapi" target="_blank" class="button">Visit
                 site</a>
             </div>
           </div>
@@ -71,8 +70,7 @@
                 <h3>TypeScript, React</h3>
                 <p>Individual school assignment on the education Frontend Developer</p>
               </div>
-              <a href="https://tmdb-hb.netlify.app/" title="Link to TMDB" target="_blank"
-                class="button">Visit
+              <a href="https://tmdb-hb.netlify.app/" title="Link to TMDB" target="_blank" class="button">Visit
                 site</a>
             </div>
           </div>
@@ -191,6 +189,7 @@
 
     <!-- Skills -->
     <div class="skills">
+      <i class="fa-brands fa-angular"></i>
       <i class="fa-brands fa-react"></i>
       <i class="fa-brands fa-square-js"></i>
       <i class="fa-brands fa-html5"></i>
@@ -222,8 +221,8 @@
 
   <!-- JavaScript -->
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
+    function navbar() {
+      const x = document.getElementById("myTopnav");
       if (x.className === "nav") {
         x.className += " responsive";
       } else {
